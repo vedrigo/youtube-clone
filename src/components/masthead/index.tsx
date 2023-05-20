@@ -10,7 +10,7 @@ import { MasterHeadSearch } from "./search";
 
 export const MastHead = () => {
   return (
-    <div className="flex items-center justify-between px-4">
+    <div className="fixed top-0 z-40 flex w-full items-center justify-between px-4">
       <div className="flex items-center">
         <button className="rounded-full p-2 hover:bg-black hover:bg-opacity-10">
           <span className="text-2xl dark:text-white">
