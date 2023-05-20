@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "YouTube",
+  title: "YouTube Clone",
   description: "Vídeos para toda família",
 };
 
