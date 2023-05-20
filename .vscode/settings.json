@@ -1,0 +1,15 @@
+{
+  "cSpell.words": ["moment"],
+  "cSpell.ignoreRegExpList": ["klass(es)*", "upsert"],
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true
+  },
+  "eslint.packageManager": "yarn",
+  "material-icon-theme.activeIconPack": "react",
+  "typescript.preferences.importModuleSpecifier": "relative"
+}
