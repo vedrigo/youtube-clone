@@ -1,5 +1,5 @@
-import { MdHomeFilled, MdMovie, MdOutlineVideoLibrary } from "react-icons/md";
 import routes from "../../routes";
+import { MaterialIcon } from "../material-icon";
 import { GuideEntry } from "./guide-entry";
 
 export const AppDrawer = () => {
@@ -10,17 +10,17 @@ export const AppDrawer = () => {
         <div className="mr-3 p-3">
           <GuideEntry
             title="Home"
-            icon={<MdHomeFilled />}
+            icon={<MaterialIcon icon="home_filled" />}
             href={routes.home.path()}
           />
           <GuideEntry
             title="Shorts"
-            icon={<MdOutlineVideoLibrary />}
+            icon={<MaterialIcon icon="video_library" />}
             href={routes.shorts.videoId.path({ videoId: "123" })}
           />
           <GuideEntry
             title="Subscription"
-            icon={<MdMovie />}
+            icon={<MaterialIcon icon="movie" />}
             href={routes.feed.subscriptions.path()}
           />
         </div>
