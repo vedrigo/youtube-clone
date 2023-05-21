@@ -1,4 +1,6 @@
-import { MdHomeFilled } from "react-icons/md";
+import { MdHomeFilled, MdMovie, MdOutlineVideoLibrary } from "react-icons/md";
+import routes from "../../routes";
+import { GuideEntry } from "./guide-entry";
 
 export const AppDrawer = () => {
   return (
@@ -6,14 +8,21 @@ export const AppDrawer = () => {
       <div id="guide-spacer" className="mt-14"></div>
       <div id="guide-content">
         <div className="mr-3 p-3">
-          <div className="flex h-10 flex-1 items-center rounded-lg bg-black bg-opacity-5">
-            <div className="flex flex-1 items-center px-3">
-              <span className="mr-6 text-2xl">
-                <MdHomeFilled />
-              </span>
-              <span className="text-sm">Home</span>
-            </div>
-          </div>
+          <GuideEntry
+            title="Home"
+            icon={<MdHomeFilled />}
+            href={routes.home.path}
+          />
+          <GuideEntry
+            title="Shorts"
+            icon={<MdOutlineVideoLibrary />}
+            href={routes.shorts.videoId.path.replace("[videoId]", "123")}
+          />
+          <GuideEntry
+            title="Subscription"
+            icon={<MdMovie />}
+            href={routes.feed.subscriptions.path}
+          />
         </div>
       </div>
     </div>
