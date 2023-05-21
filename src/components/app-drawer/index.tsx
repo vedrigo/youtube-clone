@@ -11,17 +11,17 @@ export const AppDrawer = () => {
           <GuideEntry
             title="Home"
             icon={<MdHomeFilled />}
-            href={routes.home.path}
+            href={routes.home.path()}
           />
           <GuideEntry
             title="Shorts"
             icon={<MdOutlineVideoLibrary />}
-            href={routes.shorts.videoId.path.replace("[videoId]", "123")}
+            href={routes.shorts.videoId.path({ videoId: "123" })}
           />
           <GuideEntry
             title="Subscription"
             icon={<MdMovie />}
-            href={routes.feed.subscriptions.path}
+            href={routes.feed.subscriptions.path()}
           />
         </div>
       </div>
