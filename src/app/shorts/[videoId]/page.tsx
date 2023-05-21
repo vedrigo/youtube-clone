@@ -1,5 +1,5 @@
 const ShortsPage = () => {
-  return <div></div>;
+  return <div>Shorts Page</div>;
 };
 
 export default ShortsPage;

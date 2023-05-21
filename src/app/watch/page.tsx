@@ -1,3 +1,3 @@
 export default function VideoPage() {
-  return <div>video</div>;
+  return <div>Video Page</div>;
 }
