@@ -1,5 +1,16 @@
 const routes = {
+  channel: {
+    channelId: {
+      path: ({ channelId }: { channelId: string }) => `/channel/${channelId}`,
+    },
+  },
+  external: {
+    youtube: {
+      music: { link: () => "https://music.youtube.com/" },
+    },
+  },
   feed: {
+    library: { path: () => "/feed/library" },
     subscriptions: {
       path: () => "/feed/subscriptions",
     },

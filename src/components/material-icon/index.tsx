@@ -19,17 +19,19 @@ type PropsType = {
 
 export const MaterialIcon = ({
   fill = false,
-  weight = "400",
+  weight = "300",
   icon,
   className = "",
 }: PropsType) => {
+  const grade: -25 | 0 | 200 = 0;
+  const opticalSize: 20 | 24 | 40 | 48 = 48;
   return (
     <i
       className={`${materialSymbols.className} ${className}`}
       style={{
         fontVariationSettings: `'FILL' ${
           fill ? 1 : 0
-        }, 'wght' ${weight}, 'GRAD' ${0}, 'opsz' ${48}`,
+        }, 'wght' ${weight}, 'GRAD' ${grade}, 'opsz' ${opticalSize}`,
       }}
     >
       {icon}

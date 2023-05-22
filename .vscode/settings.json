@@ -11,5 +11,8 @@
   },
   "eslint.packageManager": "yarn",
   "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.folders.associations": {
+    "feed/library": ""
+  },
   "typescript.preferences.importModuleSpecifier": "relative"
 }

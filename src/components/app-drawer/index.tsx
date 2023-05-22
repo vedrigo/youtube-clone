@@ -15,13 +15,29 @@ export const AppDrawer = () => {
           />
           <GuideEntry
             title="Shorts"
-            icon={<MaterialIcon icon="video_library" />}
+            icon={<MaterialIcon icon="folder" />}
             href={routes.shorts.videoId.path({ videoId: "123" })}
           />
           <GuideEntry
             title="Subscription"
-            icon={<MaterialIcon icon="movie" />}
+            icon={<MaterialIcon icon="subscriptions" />}
             href={routes.feed.subscriptions.path()}
+          />
+          <GuideEntry
+            title="Originals"
+            icon={<MaterialIcon icon="folder" />}
+            href={routes.channel.channelId.path({ channelId: "originals" })}
+          />
+          <GuideEntry
+            title="YouTube Music"
+            icon={<MaterialIcon icon="folder" />}
+            href={routes.external.youtube.music.link()}
+            target="_blank"
+          />
+          <GuideEntry
+            title="Library"
+            icon={<MaterialIcon icon="video_library" />}
+            href={routes.feed.library.path()}
           />
         </div>
       </div>

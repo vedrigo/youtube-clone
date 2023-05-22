@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { AiFillYoutube } from "react-icons/ai";
 import {
   MdMenu,
   MdMic,
   MdMoreVert,
   MdOutlineAccountCircle,
 } from "react-icons/md";
+import { SiYoutube } from "react-icons/si";
 import { MasterHeadSearch } from "./search";
 
 export const MastHead = () => {
@@ -19,8 +19,8 @@ export const MastHead = () => {
             </span>
           </button>
           <Link href="/" className="relative flex items-center px-4 py-2">
-            <span className="text-4xl text-red-600 ">
-              <AiFillYoutube />
+            <span className="mr-1 text-3xl text-red-600 ">
+              <SiYoutube />
             </span>
             <span className="text-xl font-medium dark:text-white">YouTube</span>
             <span className="absolute right-0 top-2 text-xs font-light dark:text-white">
