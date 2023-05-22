@@ -19,11 +19,11 @@ type PropsType = {
 
 export const MaterialIcon = ({
   fill = false,
-  weight = "300",
+  weight = "200",
   icon,
   className = "",
 }: PropsType) => {
-  const grade: -25 | 0 | 200 = 0;
+  const grade: number = 100; // valores padrões do Google -25 | 0 | 200
   const opticalSize: 20 | 24 | 40 | 48 = 48;
   return (
     <i

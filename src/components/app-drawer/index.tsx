@@ -1,5 +1,6 @@
 import routes from "../../routes";
 import { MaterialIcon } from "../material-icon";
+import { SvgIcon } from "../svg-icon";
 import { GuideEntry } from "./guide-entry";
 
 export const AppDrawer = () => {
@@ -15,11 +16,11 @@ export const AppDrawer = () => {
           />
           <GuideEntry
             title="Shorts"
-            icon={<MaterialIcon icon="folder" />}
+            icon={<SvgIcon icon="shorts" className="h-6" />}
             href={routes.shorts.videoId.path({ videoId: "123" })}
           />
           <GuideEntry
-            title="Subscription"
+            title="Subscriptions"
             icon={<MaterialIcon icon="subscriptions" />}
             href={routes.feed.subscriptions.path()}
           />

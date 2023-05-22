@@ -14,5 +14,9 @@
   "material-icon-theme.folders.associations": {
     "feed/library": ""
   },
-  "typescript.preferences.importModuleSpecifier": "relative"
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "svg.preview.background": "transparent",
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  }
 }
