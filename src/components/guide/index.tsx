@@ -1,11 +1,19 @@
+"use client";
+import { useContext } from "react";
+import { AppContext } from "../../app/context";
 import routes from "../../routes";
 import { MaterialIcon } from "../material-icon";
 import { SvgIcon } from "../svg-icon";
 import { GuideEntry } from "./guide-entry";
 
-export const AppDrawer = () => {
+export const Guide = () => {
+  const {
+    guide: { visible },
+  } = useContext(AppContext);
   return (
-    <div className="fixed left-0 top-0 z-10 h-full w-60">
+    <div
+      className={`fixed left-0 top-0 z-10 h-full w-60 ${!visible && "hidden"}`}
+    >
       <div id="guide-spacer" className="mt-14"></div>
       <div id="guide-content">
         <div className="mr-3 p-3">

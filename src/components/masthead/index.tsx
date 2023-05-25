@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { useContext } from "react";
 import {
   MdMenu,
   MdMic,
@@ -6,14 +8,21 @@ import {
   MdOutlineAccountCircle,
 } from "react-icons/md";
 import { SiYoutube } from "react-icons/si";
+import { AppContext } from "../../app/context";
 import { MasterHeadSearch } from "./search";
 
 export const MastHead = () => {
+  const {
+    guide: { setVisible, visible },
+  } = useContext(AppContext);
   return (
     <div className="fixed top-0 z-40 flex h-14 w-full flex-1 items-center">
       <div className="flex w-full items-center justify-between px-4">
         <div className="flex items-center">
-          <button className="rounded-full p-2 hover:bg-black hover:bg-opacity-10">
+          <button
+            onClick={() => setVisible(!visible)}
+            className="rounded-full p-2 hover:bg-black hover:bg-opacity-10"
+          >
             <span className="text-2xl dark:text-white">
               <MdMenu />
             </span>

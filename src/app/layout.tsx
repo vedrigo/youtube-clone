@@ -1,6 +1,9 @@
 import { Roboto } from "next/font/google";
-import { AppDrawer } from "../components/app-drawer";
+import { BrowserResults } from "../components/browser-results";
+import { Guide } from "../components/guide";
 import { MastHead } from "../components/masthead";
+import { MiniGuide } from "../components/mini-guide";
+import { AppContextProvider } from "./context";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -19,14 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        <main className="h-screen">
-          <MastHead />
-          <AppDrawer />
-          <div className="ml-60 mt-14">{children}</div>
-        </main>
-      </body>
-    </html>
+    <AppContextProvider>
+      <html lang="en">
+        <body className={roboto.className}>
+          <main className="h-screen">
+            <MastHead />
+            <Guide />
+            <MiniGuide />
+            <BrowserResults>{children}</BrowserResults>
+          </main>
+        </body>
+      </html>
+    </AppContextProvider>
   );
 }
