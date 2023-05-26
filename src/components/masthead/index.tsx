@@ -1,14 +1,10 @@
 "use client";
 import Link from "next/link";
 import { useContext } from "react";
-import {
-  MdMenu,
-  MdMic,
-  MdMoreVert,
-  MdOutlineAccountCircle,
-} from "react-icons/md";
+import { MdMenu, MdMoreVert, MdOutlineAccountCircle } from "react-icons/md";
 import { SiYoutube } from "react-icons/si";
 import { AppContext } from "../../app/context";
+import { Mic } from "./mic";
 import { MasterHeadSearch } from "./search";
 
 export const MastHead = () => {
@@ -39,11 +35,7 @@ export const MastHead = () => {
         </div>
         <div className="ml-8 flex max-w-2xl flex-1 items-center">
           <MasterHeadSearch />
-          <button className="ml-2 rounded-full bg-black bg-opacity-0 p-2 hover:bg-opacity-10 dark:bg-opacity-5">
-            <span className="text-2xl">
-              <MdMic />
-            </span>
-          </button>
+          <Mic />
         </div>
         <div className="flex flex-shrink-0 items-center">
           <button className="rounded-full px-4 py-2">
