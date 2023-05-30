@@ -11,8 +11,8 @@ export const SvgIcon = ({ className, icon, color, fill }: PropsType) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       viewBox="0 0 24 24"
       preserveAspectRatio="xMidYMid meet"
       focusable="false"
