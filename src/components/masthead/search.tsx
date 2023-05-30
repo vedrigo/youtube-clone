@@ -31,7 +31,7 @@ export const MasterHeadSearch = () => {
           </button>
         )}
         {show && (
-          <div className="absolute left-0 top-10 h-80 w-full rounded-xl border-x border-b border-gray-200 py-4  shadow-md shadow-gray-200">
+          <div className="absolute left-0 top-10 h-80 w-full rounded-xl border-x border-b border-gray-200 bg-white py-4  shadow-md shadow-gray-200">
             <div className="flex flex-1 bg-black bg-opacity-0 px-4 py-1 hover:bg-opacity-5">
               <span className="pr-3  text-2xl text-gray-700 dark:text-white">
                 <MdSearch />
