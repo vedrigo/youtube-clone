@@ -29,7 +29,7 @@ export const Guide = () => {
           />
           <GuideEntry
             title="Subscriptions"
-            icon={<MaterialIcon icon="subscriptions" />}
+            icon={<SvgIcon icon="subscriptions" className="h-6" />}
             href={routes.feed.subscriptions.path()}
           />
           <GuideEntry
