@@ -1,11 +1,15 @@
 import routes from "../../routes";
+import { mastHeadHeight } from "../masthead/consts";
 import { MaterialIcon } from "../material-icon";
 import { SvgIcon } from "../svg-icon";
 import { MiniGuideEntry } from "./mini-guide-entry";
 
 export const MiniGuide = () => {
   return (
-    <div className="w-64px top-56px fixed left-0 z-10 h-full">
+    <div
+      className={`w-64px top-56px fixed left-0 z-10`}
+      style={{ height: `calc(100% - ${mastHeadHeight})` }}
+    >
       <div id="guide-content">
         <div className="mr-3 mt-1 px-1">
           <MiniGuideEntry

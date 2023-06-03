@@ -22,17 +22,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <AppContextProvider>
-      <html lang="en">
-        <body className={roboto.className}>
-          <main className="h-screen">
-            <MastHead />
-            <Guide />
-            <MiniGuide />
-            <BrowserResults>{children}</BrowserResults>
-          </main>
-        </body>
-      </html>
-    </AppContextProvider>
+    <html lang="en" className="h-screen">
+      <body className={`${roboto.className}`}>
+        <AppContextProvider>
+          <MastHead />
+          <Guide />
+          <MiniGuide />
+          <BrowserResults>{children}</BrowserResults>
+        </AppContextProvider>
+      </body>
+    </html>
   );
 }

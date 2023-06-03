@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { MdMenu, MdOutlineAccountCircle } from "react-icons/md";
 import { SiYoutube } from "react-icons/si";
 import { AppContext } from "../../app/context";
+import { mastHeadHeight } from "./consts";
 import { MenuButton } from "./menu-button";
 import { Mic } from "./mic";
 import { MasterHeadSearch } from "./search";
@@ -13,7 +14,10 @@ export const MastHead = () => {
     guide: { setVisible, visible },
   } = useContext(AppContext);
   return (
-    <div className="fixed top-0 z-40 flex h-14 w-full flex-1 items-center">
+    <div
+      className={`fixed top-0 z-40 flex  w-full flex-1 items-center bg-white`}
+      style={{ height: mastHeadHeight }}
+    >
       <div className="flex w-full items-center justify-between px-4">
         <div className="flex items-center">
           <button
